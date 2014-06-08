@@ -3,10 +3,11 @@
   <head>
     <title>Messing Around</title>
     <link rel="stylesheet" href="styles/main.css">
+    <meta ng-init="app = {view: 'main.html'}">
   </head>
   <body>
     <div class="container">
-      <div ng-include="'main.html'"></div>
+      <div ng-include="app.view"></div>
     </div>
 
     <script src="bower_components/angular/angular.js"></script>
