@@ -3,9 +3,31 @@
   <head>
     <title>Messing Around</title>
     <link rel="stylesheet" href="styles/main.css">
-    <meta ng-init="app = {view: 'main.html'}">
+    <meta ng-init="app = {view: 'list.html'}">
+    <meta ng-init="app.people = [
+      {first: 'Alphonse',  last: 'Reich',       phone: '(604) 694-4676' },
+      {first: 'Angelia',   last: 'Clyne',       phone: '(604) 403-1055' },
+      {first: 'Barbie',    last: 'Munyon',      phone: '(604) 577-7684' },
+      {first: 'Bong',      last: 'Smotherman',  phone: '(604) 548-8848' },
+      {first: 'Caprice',   last: 'Atnip',       phone: '(604) 639-7225' },
+      {first: 'Claire',    last: 'Brueggeman',  phone: '(604) 343-5394' },
+      {first: 'Dewey',     last: 'Lutes',       phone: '(604) 542-2016' },
+      {first: 'Fabian',    last: 'Macken',      phone: '(604) 971-8608' },
+      {first: 'Fannie',    last: 'Fenster',     phone: '(604) 393-6300' },
+      {first: 'Fredricka', last: 'Welsh',       phone: '(604) 173-1566' },
+      {first: 'Glennis',   last: 'Plant',       phone: '(604) 331-4830' },
+      {first: 'Harry',     last: 'Borgen',      phone: '(604) 235-1830' },
+      {first: 'Janiece',   last: 'Chinn',       phone: '(604) 816-7357' },
+      {first: 'Jon',       last: 'Scanlon',     phone: '(604) 853-3614' },
+      {first: 'Julieta',   last: 'Bedwell',     phone: '(604) 500-4918' },
+      {first: 'Lora',      last: 'Ruder',       phone: '(604) 368-5560' },
+      {first: 'Mercy',     last: 'Coots',       phone: '(604) 167-9289' },
+      {first: 'Paris',     last: 'Westrich',    phone: '(604) 190-3098' },
+      {first: 'Tess',      last: 'Pando',       phone: '(604) 250-7568' },
+      {first: 'Tora',      last: 'Dye',         phone: '(604) 418-2720' }]">
   </head>
   <body>
+
     <div class="container">
       <div ng-include="app.view"></div>
     </div>

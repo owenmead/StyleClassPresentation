@@ -1,0 +1,22 @@
+<div>
+  <p>Main View</p>
+
+  <input type="text" ng-model="peopleSearch">
+
+  <table class="table table-condensed">
+    <thead>
+      <th ng-click="sort = 'first'">First</th>
+      <th ng-click="sort = 'last'">Last</th>
+      <th ng-click="sort = 'phone'">Phone</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in app.people|filter:peopleSearch|orderBy:sort">
+        <td>{{person.first}}</td>
+        <td>{{person.last}}</td>
+        <td>{{person.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="" ng-click="app.view = 'about.html'">About</a>
+</div>
